@@ -15,14 +15,8 @@ services:
     - /var/run:/var/run:rw
     - /sys:/sys:ro
     - /var/lib/docker/:/var/lib/docker:ro
-
-  nuttcp_server:
-    container_name: nuttcp1
-    image: moreiraal/nuttcp
-    stdin_open: true
-    tty: true
  
-  nuttcp_client:
+  nuttcp:
     container_name: nuttcp2
     image: moreiraal/nuttcp2
     stdin_open: true
